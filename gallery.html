@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Project Gallery | California Cabinets — Fresno, CA</title>
+<meta name="description" content="Browse California Cabinets' portfolio of completed kitchen, bath, outdoor, and specialty cabinet projects across Fresno and the Central Valley."/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="css/style.css"/>
+<style>
+  /* Gallery page masonry override */
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 240px;
+    gap: 10px;
+  }
+  .gi { border-radius: 3px; }
+  .gi img { min-height: 240px; height: 100%; }
+  .gi.h2 { grid-row: span 2; }
+  .gi.w2 { grid-column: span 2; }
+  @media (max-width: 900px) {
+    .gallery-grid { grid-template-columns: repeat(2, 1fr); grid-auto-rows: 200px; }
+    .gi.w2 { grid-column: span 1; }
+  }
+  @media (max-width: 480px) {
+    .gallery-grid { grid-template-columns: 1fr; grid-auto-rows: auto; }
+    .gi, .gi.h2, .gi.w2 { grid-column: span 1; grid-row: span 1; }
+    .gi img { height: 260px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo"><img src="CC_Logo_RGB_2.png" alt="California Cabinets"/></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html" class="nav-cta">Get a Quote</a></li>
+    </ul>
+    <button class="nav-hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<!-- PAGE BANNER -->
+<div class="page-banner">
+  <div class="page-banner-bg" style="background-image:url('cabinets12.webp')"></div>
+  <div class="page-banner-content container">
+    <div class="breadcrumb"><a href="index.html">Home</a><span class="breadcrumb-sep">/</span><span>Gallery</span></div>
+    <span class="eyebrow">Our Portfolio</span>
+    <h1>Transformations<br/>We're Proud Of</h1>
+    <p>A collection of completed projects across kitchens, baths, outdoor spaces, and specialty builds throughout the Central Valley.</p>
+  </div>
+</div>
+
+<!-- GALLERY -->
+<section class="bg-white">
+  <div class="container">
+    <div class="gallery-filters">
+      <button class="gf-btn active" data-filter="all">All Projects</button>
+      <button class="gf-btn" data-filter="kitchen">Kitchens</button>
+      <button class="gf-btn" data-filter="bath">Bath</button>
+      <button class="gf-btn" data-filter="outdoor">Outdoor</button>
+      <button class="gf-btn" data-filter="specialty">Wine &amp; Built-Ins</button>
+      <button class="gf-btn" data-filter="showroom">Showroom</button>
+    </div>
+
+    <div class="gallery-grid">
+      <!-- Kitchens -->
+      <div class="gi w2 h2" data-cat="kitchen" data-lightbox="cabinets15.webp" data-caption="White Shaker Kitchen — Black & Gold Range Hood">
+        <img src="cabinets15.webp" alt="White shaker kitchen with black and gold range hood" loading="lazy"/>
+        <div class="gi-overlay"><span class="gi-caption">White Shaker Kitchen</span></div>
+        <div class="gi-zoom"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div>
+      </div>
+      <div class="gi" data-cat="kitchen" data-lightbox="cabinets3.webp" data-caption="Modern Dark Wood Kitchen with Island">
+        <img src="cabinets3.webp" alt="Modern dark wood kitchen with island" loading="lazy"/>
+        <div class="gi-overlay"><span class="gi-caption">Modern Dark Wood Kitchen</span></div>
+        <div class="gi-zoom"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div>
+      </div>
+      <div class="gi" data-cat="kitchen" data-lightbox="cabinets6.webp" data-caption="White & Dark Island Kitchen — Granite Countertops">
+        <img src="cabinets6.webp" alt="White kitchen with dark island and granite countertops" loading="lazy"/>
+        <div class="gi-overlay"><span class="gi-caption">White & Dark Island Kitchen</span></div>
+        <div class="gi-zoom"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div>
+      </div>
+
+      <div class="gi h2" data-cat="kitchen" data-lightbox="cabinets1.webp" data-caption="Luxury White Kitchen — Oval Glass Cabinets & Chandelier">
+        <img src="cabinets1.webp" alt="Luxury white kitchen with oval glass cabinets and chandelier" loading="lazy"/>
+        <div class="gi-overlay"><span class="gi-caption">Luxury Glass-Front Kitchen</span></div>
+        <div class="gi-zoom"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div>
+      </div>
+      <div class="gi" data-cat="kitchen" data-lightbox="cabinets14.webp" data-caption="Contemporary Kitchen — Globe Pendants & White Cabinets">
+        <img src="cabinets14.webp" alt="Contemporary white kitchen with globe pendant lights" loading="lazy"/>
+        <div class="gi-overlay"><span class="gi-caption">Contemporary Pendant Kitchen</span></div>
+        <div class="gi-zoom"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div>
+      </div>
+      <div class="gi" data-cat="kitchen" data-lightbox="cabinets2.webp" data-caption="Rustic Kitchen — Exposed Brick & Stone Countertops">
+        <img src="cabinets2.webp" alt="Rustic kitchen with gray cabinets and exposed brick" loading="lazy"/>
+        <div class="gi-overlay"><span class="gi-caption">Rustic Exposed Brick Kitchen</span></div>
+        <div class="gi-zoom"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div>
+      </div>
+
+      <!-- Natural wood kitchen trio -->
+      <div class="gi w2" data-cat="kitchen" data-lightbox="cabinets17.webp" data-caption="Natural Wood Kitchen — Custom Range Hood & Open Shelving">
+        <img src="cabinets17.webp" alt="Natural wood kitchen with custom range hood and open shelving" loading="lazy"/>
+        <div class="gi-overlay"><span class="gi-caption">Natural Wood Kitchen — Range Hood</span></div>
+        <div class="gi-zoom"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div>
+      </div>
+      <div class="gi" data-cat="kitchen" data-lightbox="cabinets16.webp" data-caption="Natural Wood Kitchen — Farmhouse Sink & Glass Cabinets">
+        <img src="cabinets16.webp" alt="Natural wood kitchen with farmhouse sink" loading="lazy"/>
+        <div class="gi-overlay"><span class="gi-caption">Natural Wood — Farmhouse Sink</span></div>
+        <div class="gi-zoom"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div>
+      </div>
+      <div class="gi" data-cat="kitchen" data-lightbox="cabinets18.webp" data-caption="Natural Wood Kitchen — Corner View with Open Shelving">
+        <img src="cabinets18.webp" alt="Natural wood kitchen corner with open shelving" loading="lazy"/>
+        <div class="gi-overlay"><span class="gi-caption">Natural Wood — Corner Open Shelving</span></div>
+        <div class="gi-zoom"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div>
+      </div>
+
+      <div class="gi" data-cat="kitchen" data-lightbox="cabinets11.webp" data-caption="Craftsman Kitchen — Warm Wood Tones">
+        <img src="cabinets11.webp" alt="Craftsman style kitchen with warm wood tones" loading="lazy"/>
+        <div class="gi-overlay"><span class="gi-caption">Craftsman Style Kitchen</span></div>
+        <div class="gi-zoom"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div>
+      </div>
+      <div class="gi" data-cat="kitchen" data-lightbox="cabinets12.webp" data-caption="Farmhouse Kitchen — White Cabinets & Dark Island">
+        <img src="cabinets12.webp" alt="Farmhouse kitchen with white cabinets and dark island" loading="lazy"/>
+        <div class="gi-overlay"><span class="gi-caption">Farmhouse Kitchen</span></div>
+        <div class="gi-zoom"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div>
+      </div>
+      <div class="gi" data-cat="kitchen" data-lightbox="cabinets13.webp" data-caption="Grand Kitchen — Dark Island & Ornate Ceiling">
+        <img src="cabinets13.webp" alt="Luxury kitchen with dark island and ornate ceiling" loading="lazy"/>
+        <div class="gi-overlay"><span class="gi-caption">Grand Luxury Kitchen</span></div>
+        <div class="gi-zoom"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div>
+      </div>
+
+      <!-- Bath -->
+      <div class="gi w2" data-cat="bath" data-lightbox="cabinets10.webp" data-caption="Traditional Bath — Dark Wood Vanity">
+        <img src="cabinets10.webp" alt="Traditional bathroom with dark wood vanity and gold hardware" loading="lazy"/>
+        <div class="gi-overlay"><span class="gi-caption">Traditional Bath Vanity</span></div>
+        <div class="gi-zoom"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div>
+      </div>
+
+      <!-- Outdoor -->
+      <div class="gi w2" data-cat="outdoor" data-lightbox="cabinets5.webp" data-caption="Outdoor Kitchen — NatureKast Weatherproof Cabinetry">
+        <img src="cabinets5.webp" alt="Outdoor kitchen with NatureKast weatherproof cabinetry" loading="lazy"/>
+        <div class="gi-overlay"><span class="gi-caption">Outdoor Kitchen — NatureKast</span></div>
+        <div class="gi-zoom"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div>
+      </div>
+
+      <!-- Specialty -->
+      <div class="gi h2" data-cat="specialty" data-lightbox="cabinets7.webp" data-caption="Custom Wine Cellar — Stone & Wood">
+        <img src="cabinets7.webp" alt="Custom wine cellar with stone and wood design" loading="lazy"/>
+        <div class="gi-overlay"><span class="gi-caption">Custom Wine Cellar</span></div>
+        <div class="gi-zoom"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div>
+      </div>
+      <div class="gi" data-cat="specialty" data-lightbox="cabinets8.webp" data-caption="Home Office Library — Floor-to-Ceiling Built-Ins">
+        <img src="cabinets8.webp" alt="Custom home office library with floor to ceiling built-ins" loading="lazy"/>
+        <div class="gi-overlay"><span class="gi-caption">Home Office Library</span></div>
+        <div class="gi-zoom"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div>
+      </div>
+      <div class="gi" data-cat="specialty" data-lightbox="cabinets9.webp" data-caption="Bar & Beverage Center — Dark Wood">
+        <img src="cabinets9.webp" alt="Custom bar and beverage center with dark wood cabinets" loading="lazy"/>
+        <div class="gi-overlay"><span class="gi-caption">Bar &amp; Beverage Center</span></div>
+        <div class="gi-zoom"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div>
+      </div>
+      <div class="gi" data-cat="specialty" data-lightbox="cabinets4.webp" data-caption="Butler's Pantry & Dining Room Built-Ins">
+        <img src="cabinets4.webp" alt="Butler's pantry and dining room built-in cabinets" loading="lazy"/>
+        <div class="gi-overlay"><span class="gi-caption">Butler's Pantry &amp; Built-Ins</span></div>
+        <div class="gi-zoom"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div>
+      </div>
+
+      <!-- Showroom -->
+      <div class="gi w2" data-cat="showroom" data-lightbox="DSC05576.jpeg" data-caption="California Cabinets Showroom — Hardware Wall">
+        <img src="DSC05576.jpeg" alt="California Cabinets Fresno showroom hardware wall display" loading="lazy"/>
+        <div class="gi-overlay"><span class="gi-caption">Showroom — Hardware Wall</span></div>
+        <div class="gi-zoom"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div>
+      </div>
+      <div class="gi" data-cat="showroom" data-lightbox="DSC05641.jpeg" data-caption="Team Reviewing Cabinet Samples in Showroom">
+        <img src="DSC05641.jpeg" alt="Team reviewing cabinet samples at the showroom" loading="lazy"/>
+        <div class="gi-overlay"><span class="gi-caption">Design Consultation</span></div>
+        <div class="gi-zoom"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div>
+      </div>
+      <div class="gi" data-cat="showroom" data-lightbox="DSC05690.jpeg" data-caption="3D Design Planning — See It Before You Build">
+        <img src="DSC05690.jpeg" alt="3D design planning session in the showroom" loading="lazy"/>
+        <div class="gi-overlay"><span class="gi-caption">3D Design Planning</span></div>
+        <div class="gi-zoom"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div>
+      </div>
+      <div class="gi" data-cat="showroom" data-lightbox="DSC05665.jpeg" data-caption="Diamond Cabinet Finish Display">
+        <img src="DSC05665.jpeg" alt="Diamond cabinet finish display at California Cabinets" loading="lazy"/>
+        <div class="gi-overlay"><span class="gi-caption">Diamond Cabinet Display</span></div>
+        <div class="gi-zoom"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div>
+      </div>
+      <div class="gi" data-cat="showroom" data-lightbox="DSC05599.jpeg" data-caption="Ken Brown in the Showroom">
+        <img src="DSC05599.jpeg" alt="Ken Brown owner of California Cabinets in the showroom" loading="lazy"/>
+        <div class="gi-overlay"><span class="gi-caption">Ken Brown — Owner</span></div>
+        <div class="gi-zoom"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div>
+      </div>
+      <div class="gi" data-cat="showroom" data-lightbox="DSC05609.jpeg" data-caption="Ken Brown at the Cabinet Display Wall">
+        <img src="DSC05609.jpeg" alt="Ken Brown at the cabinet sample display wall" loading="lazy"/>
+        <div class="gi-overlay"><span class="gi-caption">Cabinet Sample Display</span></div>
+        <div class="gi-zoom"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="bg-cream">
+  <div class="container-sm text-center">
+    <span class="eyebrow">Love What You See?</span>
+    <h2>Let's Create Your Dream Space</h2>
+    <hr class="gold-rule" style="margin:0 auto 20px"/>
+    <p class="section-lead" style="margin:0 auto 32px">Each project in our gallery started with a conversation. Come visit our showroom or get in touch to start yours.</p>
+    <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap">
+      <a href="contact.html" class="btn btn-primary btn-lg">Get a Free Quote</a>
+      <a href="services.html" class="btn btn-navy btn-lg">Explore Services</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer id="footer">
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand"><img src="CC_Logo_RGB_2.png" alt="California Cabinets"/><p>Fresno's trusted cabinet design studio — transforming kitchens, baths, and outdoor spaces with beautiful craftsmanship and personal service.</p><div class="footer-social"><a href="#" class="fsoc" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a><a href="#" class="fsoc" aria-label="Instagram"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a><a href="#" class="fsoc" aria-label="Houzz"><svg viewBox="0 0 24 24"><path d="M12 2L2 9v13h8v-7h4v7h8V9z"/></svg></a></div></div>
+      <div class="footer-col"><h5>Navigation</h5><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="services.html">Services</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div class="footer-col"><h5>Services</h5><ul><li><a href="services.html#kitchen">Kitchen Cabinetry</a></li><li><a href="services.html#bath">Bath Cabinetry</a></li><li><a href="services.html#outdoor">Outdoor Living</a></li><li><a href="services.html#specialty">Wine Cellars</a></li><li><a href="services.html#specialty">Custom Built-Ins</a></li></ul></div>
+      <div class="footer-col"><h5>Contact Us</h5><address>385 W. Bedford Ave, Suite 103<br/>Fresno, California 93711<br/><br/><a href="tel:5592912678">(559) 291-2678</a><br/><a href="mailto:ken@calcabfresno.com">ken@calcabfresno.com</a></address></div>
+    </div>
+    <div class="footer-bottom"><span>&copy; 2025 California Cabinets. All rights reserved.</span><span><a href="tel:5592912678">(559) 291-2678</a></span></div>
+  </div>
+</footer>
+
+<div id="lightbox" role="dialog" aria-modal="true">
+  <button class="lb-close" aria-label="Close">✕</button>
+  <button class="lb-prev" aria-label="Previous">‹</button>
+  <img id="lb-img" src="" alt=""/>
+  <button class="lb-next" aria-label="Next">›</button>
+  <div class="lb-counter"></div>
+</div>
+<script src="js/main.js"></script>
+</body>
+</html>
