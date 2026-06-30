@@ -1,5 +1,6 @@
 {
   "version": 2,
+  "cleanUrls": true,
   "builds": [
     {
       "src": "api/**/*.js",
@@ -10,6 +11,22 @@
     {
       "src": "/api/contact",
       "dest": "/api/contact.js"
+    },
+    {
+      "src": "/about",
+      "dest": "/about.html"
+    },
+    {
+      "src": "/contact",
+      "dest": "/contact.html"
+    },
+    {
+      "src": "/gallery",
+      "dest": "/gallery.html"
+    },
+    {
+      "src": "/services",
+      "dest": "/services.html"
     }
   ]
 }
