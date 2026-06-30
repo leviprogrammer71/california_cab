@@ -136,4 +136,38 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  /* ── Contact form submission ── */
+  const contactForm = document.getElementById('contact-form');
+  const formStatus = document.getElementById('form-status');
+
+  if (contactForm && formStatus) {
+    contactForm.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const formData = new FormData(contactForm);
+      const payload = Object.fromEntries(formData.entries());
+      payload.message = payload.message || '';
+
+      formStatus.textContent = 'Sending your request...';
+      formStatus.style.color = 'var(--gray-500)';
+
+      try {
+        const response = await fetch('/api/contact', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload)
+        });
+
+        const data = await response.json();
+        if (!response.ok) throw new Error(data.message || 'Unable to send your request right now.');
+
+        formStatus.textContent = data.message || 'Thanks! Your request was sent successfully.';
+        formStatus.style.color = 'var(--navy)';
+        contactForm.reset();
+      } catch (err) {
+        formStatus.textContent = err.message || 'Unable to send your request right now.';
+        formStatus.style.color = '#b45309';
+      }
+    });
+  }
+
 });
